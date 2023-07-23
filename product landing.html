@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet"href="styles.css"> 
+         <script>
+            function scrollToOffers(event) {
+                event.preventDefault();
+                var offersContainer = document.getElementById("offers-container");
+                offersContainer.scrollIntoView({ behavior: 'smooth' });
+            }
+        </script>
+          </head>
+          <body>
+            <header>
+                <nav>
+                    <div class="logo"><img src="logo1.png"><span>Pizza</span>Point</div>
+                    <div class="menu">
+                        <a href="#">Home</a>
+                        <a href="#">Menu</a>
+                        <a href="#" onclick="scrollToOffers(event)">Offers</a>
+                        <a href="#">Delivery</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Cart
+                        <img src="cart.png" alt="Cart Logo"></a>
+                       
+                    </div>
+                </nav>
+                <div class="h-text">
+                    <h2>Free Home Delivery!!</h2>
+                    <h1>Your One stop Destination</h1>
+                    <h1>for all kinds of Pizzas</h1>
+                    <a href="#"id="dis">25% Off On Your First Order</a>
+                    <a href="#"id="order">Order Now!!</a>
+                </div>
+            </header>
+            <h3 id="offer"> Additional Offers</h3>
+            <div id="offers-container"class="card-container">
+                <div class="card" id="offer1">
+                    <img src="offer1.jpg" alt="Offer 1">
+                    <a href="#" class="card-button">View Details</a>
+                </div>
+                <div class="card" id="offer2">
+                    <img src="offer2.jpg" alt="Offer 2">
+                    <a href="#" class="card-button">View Details</a>
+                </div>
+                <div class="card" id="offer3">
+                    <img src="offer3.jpg" alt="Offer 3">
+                    <a href="#" class="card-button">View Details</a>
+                </div>
+                <footer>
+<div class="footer-column">
+        <h1>50+<img src="outlet.jpg" style="display: inline-block; vertical-align: middle; width: 40px; height: 40px;"><br><br>Outlets</h1>
+    </div>
+    <div class="footer-column">
+        <h1 style="margin-left: -50px;">5K+<img src="happy1.png" style="display: inline-block; vertical-align: middle; width: 40px; height: 40px;"><br><br> Happy Customers</h1>
+    </div>
+    <div class="footer-column">
+        <h1>30 Mins<img src="timer.jpg" style="display: inline-block; vertical-align: middle; width: 40px; height: 40px;"><br><br>Delivery Guarantee</h1>
+    </div>
+    <div class="footer-column">
+        <h1 style="margin-left: 50px;">24X7<img src="cust.png" style="display: inline-block; vertical-align: middle; width: 40px; height: 40px;"><br><br>Customer Care</h1>
+    </div>
+</footer>
+          </body>
+</html>
